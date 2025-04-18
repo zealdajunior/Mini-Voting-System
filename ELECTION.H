@@ -28,7 +28,7 @@ int extractYear(char userID[15])
     char tmp;
     for(int i=0;i<4;i++){
         tmp=userID[i];
-		year=(year*10)+(tmp-48);
+		year=(year*10)+(tmp - '0'); // '0' is more readable than ASCII 48
     }
     return year;
 }
